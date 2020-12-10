@@ -7,22 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		171060F325822953006E762B /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171060F225822953006E762B /* AppState.swift */; };
+		171060FE25825BAC006E762B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171060FD25825BAC006E762B /* AppDelegate.swift */; };
+		1710610025825BAC006E762B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171060FF25825BAC006E762B /* SceneDelegate.swift */; };
+		1710610A25825BB0006E762B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1710610825825BB0006E762B /* LaunchScreen.storyboard */; };
+		1710611625825BDA006E762B /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171060F225822953006E762B /* AppState.swift */; };
+		1710611925825BE1006E762B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172421FE2582206C0053758A /* ContentView.swift */; };
+		1710612425825C6B006E762B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17242200258220700053758A /* Assets.xcassets */; };
 		172421FD2582206C0053758A /* SwiftUI_NavigationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172421FC2582206C0053758A /* SwiftUI_NavigationApp.swift */; };
 		172421FF2582206C0053758A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172421FE2582206C0053758A /* ContentView.swift */; };
 		17242201258220700053758A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17242200258220700053758A /* Assets.xcassets */; };
-		17242204258220700053758A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17242203258220700053758A /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		172421F92582206C0053758A /* SwiftUI-Navigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Navigation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		171060F225822953006E762B /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		171060F525822A37006E762B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		171060FB25825BAC006E762B /* Navigation-iOS13.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Navigation-iOS13.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		171060FD25825BAC006E762B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		171060FF25825BAC006E762B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1710610925825BB0006E762B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1710610B25825BB0006E762B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		172421F92582206C0053758A /* Navigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Navigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		172421FC2582206C0053758A /* SwiftUI_NavigationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_NavigationApp.swift; sourceTree = "<group>"; };
 		172421FE2582206C0053758A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		17242200258220700053758A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		17242203258220700053758A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		17242205258220700053758A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		171060F825825BAC006E762B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		172421F62582206C0053758A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -33,10 +52,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		171060FC25825BAC006E762B /* Navigation-iOS13 */ = {
+			isa = PBXGroup;
+			children = (
+				171060FD25825BAC006E762B /* AppDelegate.swift */,
+				171060FF25825BAC006E762B /* SceneDelegate.swift */,
+				1710610825825BB0006E762B /* LaunchScreen.storyboard */,
+				1710610B25825BB0006E762B /* Info.plist */,
+			);
+			path = "Navigation-iOS13";
+			sourceTree = "<group>";
+		};
+		1710611325825BCE006E762B /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				171060F225822953006E762B /* AppState.swift */,
+				17242200258220700053758A /* Assets.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
 		172421F02582206C0053758A = {
 			isa = PBXGroup;
 			children = (
-				172421FB2582206C0053758A /* SwiftUI-Navigation */,
+				171060F525822A37006E762B /* README.md */,
+				1710611325825BCE006E762B /* Shared */,
+				172421FB2582206C0053758A /* Navigation */,
+				171060FC25825BAC006E762B /* Navigation-iOS13 */,
 				172421FA2582206C0053758A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,37 +86,45 @@
 		172421FA2582206C0053758A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				172421F92582206C0053758A /* SwiftUI-Navigation.app */,
+				172421F92582206C0053758A /* Navigation.app */,
+				171060FB25825BAC006E762B /* Navigation-iOS13.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		172421FB2582206C0053758A /* SwiftUI-Navigation */ = {
+		172421FB2582206C0053758A /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
 				172421FC2582206C0053758A /* SwiftUI_NavigationApp.swift */,
 				172421FE2582206C0053758A /* ContentView.swift */,
-				17242200258220700053758A /* Assets.xcassets */,
 				17242205258220700053758A /* Info.plist */,
-				17242202258220700053758A /* Preview Content */,
 			);
-			path = "SwiftUI-Navigation";
-			sourceTree = "<group>";
-		};
-		17242202258220700053758A /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				17242203258220700053758A /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
+			path = Navigation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		172421F82582206C0053758A /* SwiftUI-Navigation */ = {
+		171060FA25825BAC006E762B /* Navigation-iOS13 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 17242208258220700053758A /* Build configuration list for PBXNativeTarget "SwiftUI-Navigation" */;
+			buildConfigurationList = 1710610C25825BB0006E762B /* Build configuration list for PBXNativeTarget "Navigation-iOS13" */;
+			buildPhases = (
+				171060F725825BAC006E762B /* Sources */,
+				171060F825825BAC006E762B /* Frameworks */,
+				171060F925825BAC006E762B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Navigation-iOS13";
+			productName = "SwiftUI-Navigation-iOS13";
+			productReference = 171060FB25825BAC006E762B /* Navigation-iOS13.app */;
+			productType = "com.apple.product-type.application";
+		};
+		172421F82582206C0053758A /* Navigation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17242208258220700053758A /* Build configuration list for PBXNativeTarget "Navigation" */;
 			buildPhases = (
 				172421F52582206C0053758A /* Sources */,
 				172421F62582206C0053758A /* Frameworks */,
@@ -84,9 +134,9 @@
 			);
 			dependencies = (
 			);
-			name = "SwiftUI-Navigation";
+			name = Navigation;
 			productName = "SwiftUI-Navigation";
-			productReference = 172421F92582206C0053758A /* SwiftUI-Navigation.app */;
+			productReference = 172421F92582206C0053758A /* Navigation.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -98,6 +148,9 @@
 				LastSwiftUpdateCheck = 1220;
 				LastUpgradeCheck = 1220;
 				TargetAttributes = {
+					171060FA25825BAC006E762B = {
+						CreatedOnToolsVersion = 12.2;
+					};
 					172421F82582206C0053758A = {
 						CreatedOnToolsVersion = 12.2;
 					};
@@ -116,17 +169,26 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				172421F82582206C0053758A /* SwiftUI-Navigation */,
+				172421F82582206C0053758A /* Navigation */,
+				171060FA25825BAC006E762B /* Navigation-iOS13 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		171060F925825BAC006E762B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1710610A25825BB0006E762B /* LaunchScreen.storyboard in Resources */,
+				1710612425825C6B006E762B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		172421F72582206C0053758A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17242204258220700053758A /* Preview Assets.xcassets in Resources */,
 				17242201258220700053758A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -134,10 +196,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		171060F725825BAC006E762B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				171060FE25825BAC006E762B /* AppDelegate.swift in Sources */,
+				1710611925825BE1006E762B /* ContentView.swift in Sources */,
+				1710610025825BAC006E762B /* SceneDelegate.swift in Sources */,
+				1710611625825BDA006E762B /* AppState.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		172421F52582206C0053758A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				171060F325822953006E762B /* AppState.swift in Sources */,
 				172421FF2582206C0053758A /* ContentView.swift in Sources */,
 				172421FD2582206C0053758A /* SwiftUI_NavigationApp.swift in Sources */,
 			);
@@ -145,7 +219,58 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		1710610825825BB0006E762B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1710610925825BB0006E762B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		1710610D25825BB0006E762B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "SwiftUI-Navigation-iOS13/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourcompany.SwiftUI-Navigation-iOS13";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1710610E25825BB0006E762B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "SwiftUI-Navigation-iOS13/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourcompany.SwiftUI-Navigation-iOS13";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		17242206258220700053758A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -181,6 +306,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = P8CC95REUG;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -242,6 +368,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = P8CC95REUG;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -268,7 +395,6 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI-Navigation/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "SwiftUI-Navigation/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -289,7 +415,6 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI-Navigation/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "SwiftUI-Navigation/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -307,6 +432,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1710610C25825BB0006E762B /* Build configuration list for PBXNativeTarget "Navigation-iOS13" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1710610D25825BB0006E762B /* Debug */,
+				1710610E25825BB0006E762B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		172421F42582206C0053758A /* Build configuration list for PBXProject "SwiftUI-Navigation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -316,7 +450,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		17242208258220700053758A /* Build configuration list for PBXNativeTarget "SwiftUI-Navigation" */ = {
+		17242208258220700053758A /* Build configuration list for PBXNativeTarget "Navigation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				17242209258220700053758A /* Debug */,
