@@ -9,7 +9,6 @@ import SwiftUI
 
 class AppState: ObservableObject {
     @Published var maxDepth: Int = 5
-    @Published var navigationStack: [Int] = []
     @Published var activeViews: [Int:Int] = [:]
     
     var activeViewsDescription: String {

@@ -46,7 +46,6 @@ struct ChildView: View {
         Form {
             Section(header: Text("Info")) {
                 Text("activeViews = \(state.activeViewsDescription)")
-                Text("navigationStack = \(state.navigationStack.description)")
                 Text("currentIsActive = ")
                     + Text(currentIsActive.description)
                         .foregroundColor(currentIsActive ? Color.green : Color.primary)
@@ -62,20 +61,19 @@ struct ChildView: View {
                         destination: ChildView(title: "Child \(childID+1)", childID: childID+1, currentIsActive: $childIsActive),
                         isActive: $childIsActive
                     )
-
-                    Button("Push Child \(childID+1)") {
-                        childIsActive.toggle()
-                        state.navigationStack.append(childID+1)
-                    }
                 }
                 else {
                     Text("This is the end")
                 }
 
+                Button("Push Child \(childID+1)") {
+                    childIsActive.toggle()
+                }
+                .disabled(!allowsMoreChildViews)
+
                 Button("Pop current") {
                     presentationMode.wrappedValue.dismiss()
                     //currentIsActive.toggle()
-                    //state.navigationStack.removeLast()
                 }
                 .disabled(childID == 0)
 
@@ -96,11 +94,7 @@ struct ChildView: View {
     }
 
     var allowsMoreChildViews: Bool {
-        let numberOfActiveViews = state.activeViews.reduce(0, {
-            $0 + $1.value
-        })
-
-        return numberOfActiveViews <= state.maxDepth
+        childID < state.maxDepth
     }
 }
 
