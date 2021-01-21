@@ -45,7 +45,7 @@ struct ChildView: View {
     var body: some View {
         Form {
             Section(header: Text("Info")) {
-                Text("activeViews = \(state.activeViews.description)")
+                Text("activeViews = \(state.activeViewsDescription)")
                 Text("navigationStack = \(state.navigationStack.description)")
                 Text("currentIsActive = ")
                     + Text(currentIsActive.description)
@@ -86,11 +86,11 @@ struct ChildView: View {
         }
         .navigationBarTitle(title)
         .onAppear() {
-            print("onAppear: (depth=\(childID))")
+            print("onAppear: \(title) (depth=\(childID))")
             state.activeViews[childID, default: 0] += 1
         }
         .onDisappear() {
-            print("onDisAppear: (depth=\(childID))")
+            print("onDisAppear: \(title) (depth=\(childID))")
             state.activeViews[childID, default: 0] -= 1
         }
     }

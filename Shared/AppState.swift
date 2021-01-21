@@ -11,4 +11,15 @@ class AppState: ObservableObject {
     @Published var maxDepth: Int = 5
     @Published var navigationStack: [Int] = []
     @Published var activeViews: [Int:Int] = [:]
+    
+    var activeViewsDescription: String {
+        let r = activeViews.keys.sorted()
+            .reduce("[") { (r: String, key: Int) in
+                "\(r)\(key):\(activeViews[key]!),"
+            }
+            .dropLast()
+            .appending("]")
+        
+        return r
+    }
 }
